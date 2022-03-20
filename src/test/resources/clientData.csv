@@ -1,0 +1,3 @@
+Ivan,Ivanov,9010,True,
+,,,False,Error: First Name is required
+Ivan,,,False,Error: Last Name is required

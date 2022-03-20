@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Demo Suite" parallel="tests" thread-count="6">
+    <!--        <packages>-->
+    <!--    <package name="com.saucedemo.selenium.*"/>-->
+    <!--   </packages>-->
+    <test name="LoginTest">
+        <classes>
+            <class name="com.saucedemo.selenium.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="ItemsToCartTest">
+    <classes>
+        <class name="com.saucedemo.selenium.ItemsToCartTest"/>
+    </classes>
+    </test>
+    <test name="CheckOutTest">
+        <classes>
+            <class name="com.saucedemo.selenium.CheckOutTest"/>
+        </classes>
+    </test>
+    <test name="ItemImageLoadTest">
+        <classes>
+            <class name="com.saucedemo.selenium.ItemImageLoadTest"/>
+        </classes>
+    </test>
+    <test name="AddRemoveAllProductsTest">
+        <classes>
+            <class name="com.saucedemo.selenium.AddRemoveAllProductsTest"/>
+        </classes>
+    </test>
+    <test name="LoginPerformanceTest">
+        <classes>
+            <class name="com.saucedemo.selenium.LoginPerformanceTest"/>
+        </classes>
+    </test>
+
+</suite>
