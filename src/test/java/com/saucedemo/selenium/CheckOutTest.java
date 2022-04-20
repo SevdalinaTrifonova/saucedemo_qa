@@ -27,6 +27,7 @@ public class CheckOutTest extends TestUtil {
         LoginPage loginPage = new LoginPage(driver);
         InventoryPage inventoryPage = loginPage.login(userNameCfg, passwordCfg);
         Assert.assertFalse((inventoryPage == null), "Wrong credentials");
+        // @afterTest
         inventoryPage.resetApp();
         inventoryPage.addFirstFoundItemToCart();
         CartPage cartPage = inventoryPage.goToCart();

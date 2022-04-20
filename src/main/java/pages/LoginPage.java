@@ -36,6 +36,7 @@ public class LoginPage {
         passwordInput.clear();
         passwordInput.sendKeys(password);
 
+
         loginBtn.click();
         String actualURL = driver.getCurrentUrl();
         if (actualURL.equals(loginURL))
